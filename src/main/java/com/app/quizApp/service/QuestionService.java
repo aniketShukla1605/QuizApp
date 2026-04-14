@@ -17,4 +17,9 @@ public class QuestionService {
     }
     //Specific Category of Questions
     public List<Question> getQuestionsByCategory(String category) { return questionRepo.findByCategory(category); }
+
+    public String addQuestion(Question question) {
+        questionRepo.save(question);
+        return "Question added successfully";
+    }
 }
