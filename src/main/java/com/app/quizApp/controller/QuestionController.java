@@ -3,6 +3,7 @@ package com.app.quizApp.controller;
 import com.app.quizApp.model.Question;
 import com.app.quizApp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,13 +17,13 @@ public class QuestionController {
 
     //All Questions
     @GetMapping("/allQuestions")
-    public List<Question> allQuestions() {
+    public ResponseEntity<List<Question>> allQuestions() {
         return questionService.getAllQuestions();
     }
 
     //Only for Specific category
     @GetMapping("/category/{category}")
-    public List<Question> getQuestionsByCategory(@PathVariable String category) {
+    public ResponseEntity<List<Question>> getQuestionsByCategory(@PathVariable String category) {
         return questionService.getQuestionsByCategory(category);
     }
 
