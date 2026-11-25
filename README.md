@@ -139,7 +139,9 @@ This project is open-source and available under the MIT License.
 ---
 
 **Note**
-To see new changes visit: https://github.com/aniketShukla1605/Quiz_App_Backend/
+To see new changes visit: 
+https://github.com/aniketShukla1605/Quiz_App_Backend/
+https://github.com/aniketShukla1605/Quiz_App_Frontend/
 
 ---
 
